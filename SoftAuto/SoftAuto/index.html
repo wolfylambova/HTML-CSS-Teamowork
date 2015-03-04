@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Soft Auto</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function(){
+
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            //$('.news').css('display','none');
+            var randNews = getRandomInt(1,4);
+            $('.news:eq(' + randNews + ')').css('display','block');
+        });
+    </script>
+</head>
+    <body>
+	    <header id="header">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Logo Soft Auto"/>
+                </a>
+            </div>
+            <div class="info">
+                <strong>Contact: (056) 482 3232</strong>
+                <select>
+                    <option value="">Select your language</option>
+                    <option value="">Български</option>
+                    <option value="">Английски</option>
+                    <option value="">Немски</option>
+                </select>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="current">Начало</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Профил</a>
+                    </li>
+                    <li>
+                        <a href="rent.html">Наеми</a>
+                    </li>
+                    <li>
+                        <a href="articles.html">Артикули</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </header>
+        <div id="slider">
+            <div class="slider-wrap">
+                <div class="login">
+                    <div class="log">
+                        <label for="">Име</label>
+                        <input type="text"/>
+
+                        <label for="">Фамилия</label>
+                        <input type="text"/>
+
+                        <label for="">Пол</label>
+                        <select id="sex">
+                            <option value="m">Мъж</option>
+                            <option value="f">Жена</option>
+                        </select>
+
+                        <label for="">Потребителско име</label>
+                        <input id="username" type="text"/>
+
+                        <label for="">Парола</label>
+                        <input type="password"/>
+
+                        <button class="button blue login-button">Вход</button>
+                    </div>
+                    <div class="log-user">
+                        Здравейте, <span id="username-profile"></span>
+                        <img id="image-profile" src="images/female.png" />
+                    </div>
+
+                </div>
+
+                <div class="slider-carousel">
+                    <h2>Luxury car from 200$</h2>
+                    <h4>Treat yourself in USA</h4>
+                    <div id="slides">
+                        <img width="180" src="images/1.png" alt=""/>
+                        <img width="180" src="images/2.png" alt=""/>
+                        <img width="180" src="images/3.png" alt=""/>
+                    </div>
+
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="arrow-down"></div>
+        </div>
+
+        <main>
+            <aside class="top-5">
+                <h4 class="aside-title">Топ 5 автомобилни марки</h4>
+                <ul>
+                    <li><a href="http://www.mercedes-benz.com/en/" target="_blank">Mercedes-Benz</a></li>
+                    <li><a href="http://www.lamborghini.com/en/home/#!slide/5218" target="_blank">Lamborghini</a></li>
+                    <li><a href="http://www.bmw.bg/bg/bg/" target="_blank">BMW</a></li>
+                    <li><a href="http://www.audi.bg/" target="_blank">AUDI</a></li>
+                    <li><a href="http://www.vw.com/" target="_blank">VW</a></li>
+                </ul>
+            </aside>
+            <section class="main-news">
+                <article class="news">
+                    <h2>Ще забранят на пилотите да променят дизайна на каските си </h2>
+                    <h4>Идеята е феновете да могат да разпознават пилотите по-лесно на пистата и по телевизията</h4>
+                    <p>
+                        На среща на Ф1 комисията в Женева тази седмица Бърни Екълстоун и ФИА са решили да забранят на
+                        пилотите да имат повече от един дизайн на каската си в рамките на сезона. Очаква се предложението
+                        да получи одобрението на Световния моторспорт сезон и да влезе в правилника още тази година.
+                    </p>
+                    <a class="button blue" href="http://formula1.sportal.bg/news.php?id=19018" target="_blank">Още</a>
+                    <div class="clear"></div>
+                </article>
+
+
+                <article class="news">
+                    <h2>Проблеми за МакЛарън и Хамилтън в първия тест</h2>
+                    <h4>Британецът се почувства зле и изостави сесията</h4>
+                    <p>
+                        Пилотът на Заубер Фелипе Насър даде най-добро време в първата сутрин на вторите за годината предсезонни
+                        тестове от Формула 1 в Барселона, Испания.
+                    </p>
+                    <p>
+                        Насър, който бе най-бърз и в третия ден на първите тестове в Херес, даде най-силно време от
+                        1:27.307 минути, с което той остави зад себе си пилота на Ред Бул Даниел Рикардо.
+                        Австралиецът регистрира изоставане от едва 0.056 секунди зад лидера.
+                    </p>
+                    <a class="button blue" href="http://inews.bg/%D0%A1%D0%BF%D0%BE%D1%80%D1%82/%D0%9F%D1%80%D0%BE%D0%B1%D0%BB%D0%B5%D0%BC%D0%B8-%D0%B7%D0%B0-%D0%9C%D0%B0%D0%BA%D0%9B%D0%B0%D1%80%D1%8A%D0%BD-%D0%B8-%D0%A5%D0%B0%D0%BC%D0%B8%D0%BB%D1%82%D1%8A%D0%BD-%D0%B2-%D0%BF%D1%8A%D1%80%D0%B2%D0%B8%D1%8F-%D1%82%D0%B5%D1%81%D1%82_l.a_c.392_i.455230.html" target="_blank">Още</a>
+                    <div class="clear"></div>
+                </article>
+
+
+                <article class="news">
+                    <h2>Пореден технически проблем прекрати теста на Бътън и Макларън </h2>
+                    <h4>Повредите след идването на Хонда нямат край</h4>
+                    <p>
+                        След обещаващото начало тази сутрин отборът на Макларън продължава да не е записал нито един пълен
+                        ден без технически или други подобни проблеми. Славният британски тим и днес в първия ден от
+                        втората серия предсезонни тестове си събра багажа от писта "Каталуния" край Барселона.
+                    </p>
+                    <a class="button blue" href="http://formula1.sportal.bg/news.php?id=19021"target="_blank">Още</a>
+                    <div class="clear"></div>
+                </article>
+
+
+                <article class="news">
+                    <h2>Тест пилотът на Мерцедес ще кара за Форс Индия</h2>
+                    <h4>Отборът ще участва във втория предсезонен тест</h4>
+                    <p>
+                        Форс Индия ще вземат участие във втория от трите предсезонни тестове тази година, но с колата
+                        си от 2014. В нея ще седне тестовият пилот на Мерцедес Паскал Верлен, който освен два дни на
+                        "Каталуния", ще получи възможност да кара за тима и в двата теста през сезона.
+                    </p>
+                    <a class="button blue" href="http://formula1.sportal.bg/news.php?id=19016"target="_blank">Още</a>
+                    <div class="clear"></div>
+                </article>
+
+            </section>
+            <div class="clear"></div>
+        </main>
+	
+        <footer>
+            <p style="float:right">2015</p>
+        </footer>
+
+        <script src="js/jquery.slides.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
