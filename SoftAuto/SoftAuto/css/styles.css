@@ -250,10 +250,6 @@ footer {
     margin: 0 auto;
 }
 
-footer p {
-	float:right;
-}
-
 
 /*  PROFILES  */
 .wrapper-profiles article {
@@ -354,6 +350,11 @@ footer p {
 }
 
 @media all and (max-width: 786px){
+
+#slider > div.slider-wrap {
+width:50%;
+}
+
     #slider > div.slider-wrap > div.slider-carousel{
         display: none;
     }
